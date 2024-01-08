@@ -22,7 +22,7 @@
 template <typename... Ts>
 class TestCaseParser {
 private:
-	std::vector<std::tuple<Ts...>> testCases;
+	std::vector<std::tuple<std::decay_t<Ts>...>> testCases;
 
 public:
 	explicit TestCaseParser(std::string_view testCasesStr) {
