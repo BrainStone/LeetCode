@@ -9,8 +9,8 @@
 using namespace std;
 #endif
 
-#include <string_view>
+#include <string>
 
-const extern std::string_view TestCases;
+const extern std::string TestCases;
 
 #endif

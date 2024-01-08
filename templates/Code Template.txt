@@ -2,7 +2,7 @@ ${question.content}
 
 #include "LeetCode.hpp"
 
-const std::string_view TestCases = R"TEST_CASES(
+const std::string TestCases = R"TEST_CASES(
 
 )TEST_CASES";
 

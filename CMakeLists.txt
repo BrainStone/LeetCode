@@ -23,7 +23,7 @@ foreach(CPP_SOURCE ${CPP_SOURCES})
     string(REGEX REPLACE "[ \t\r\n]+[^ \t\r\n]+[ \t\r\n]*(,|$)" "\\1" FUNCTION_ARG_TYPES ${CMAKE_MATCH_3})
 
     # Setup code
-    add_executable(${EXECUTABLE_NAME} ${CPP_SOURCE})
+    add_executable(${EXECUTABLE_NAME} ${CPP_SOURCE} helpers/Parsers.cpp)
     target_compile_definitions(${EXECUTABLE_NAME} PRIVATE
             LEETCODE_PROBLEM_RETURNTYPE=${FUNCTION_RETURN_TYPE}
             LEETCODE_PROBLEM_FUNCNAME=${FUNCTION_NAME}
