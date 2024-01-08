@@ -1,0 +1,9 @@
+# The problems will go here
+/problems/
+
+# Let's you place your own
+.clang-format
+.editorconfig
+
+# Ignore Cmake folders
+cmake-*-debug/
