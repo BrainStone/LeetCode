@@ -2,6 +2,7 @@
 #define LEETCODE_PARSERS_HPP
 
 #include <istream>
+#include <string>
 #include <tuple>
 #include <vector>
 
@@ -11,14 +12,22 @@ T parse(std::istream& is);
 
 // Helper struct
 template <typename T>
-struct Parser {
-	static T parse(std::istream& is);
-};
+struct Parser;
 
-// Specialization for int
+// Direct specializations
 template <>
 struct Parser<int> {
 	static int parse(std::istream& is);
+};
+
+template <>
+struct Parser<double> {
+	static double parse(std::istream& is);
+};
+
+template <>
+struct Parser<std::string> {
+	static std::string parse(std::istream& is);
 };
 
 // Specialization for std::vector
