@@ -9,3 +9,18 @@ This little project is a template for running LeetCode problems locally in your 
 - Configure the `problems` folder as the `TempFilePath` of the plugin
 - Copy the templates from the `templates` folder into the respective templates of the plugin
 - Start solving problems and enjoy each problem being locally debuggable
+
+### Caveats
+
+Since C++20 doesn't have reflection
+
+- Be sure to reload CMake after each new project
+- Be sure to make the entry function look like this:
+  ```c++
+  class Solution {
+  // ...
+  public:
+  	<return type> <function-name>(<argument-list>)
+  // ...
+  };
+  ```
