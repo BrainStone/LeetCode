@@ -24,3 +24,5 @@ Since C++20 doesn't have reflection
   // ...
   };
   ```
+- Be sure to reload CMake after changing the entry function's parameter types (like for example by changing `string`
+  to `const string&`)
