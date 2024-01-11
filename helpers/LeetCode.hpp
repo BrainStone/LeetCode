@@ -9,7 +9,10 @@
 using namespace std;
 #endif
 
+// LeetCode specific stuff
 #include <string>
+
+#include "ExtraTypes.hpp"
 
 const extern std::string TestCases;
 
