@@ -27,6 +27,27 @@
 #include "LeetCode.hpp"
 #include "Parsers.hpp"
 
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& iterable) {
+	bool first = true;
+
+	os << '[';
+
+	for (const auto& elem : iterable) {
+		if (first) [[unlikely]] {
+			first = false;
+		} else [[likely]] {
+			os << ", ";
+		}
+
+		os << elem;
+	}
+
+	os << ']';
+
+	return os;
+}
+
 template <typename... Ts>
 class TestCaseParser {
 private:
