@@ -15,6 +15,16 @@ struct ListNode {
 	friend std::ostream& operator<<(std::ostream& os, const ListNode* node);
 };
 
+struct TreeNode {
+	int val;
+	TreeNode* left;
+	TreeNode* right;
+
+	TreeNode();
+	explicit TreeNode(int x);
+	TreeNode(int x, TreeNode* left, TreeNode* right);
+};
+
 // Parsers
 template <>
 struct Parser<ListNode*> {
