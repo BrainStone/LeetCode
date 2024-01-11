@@ -19,14 +19,13 @@
 #define LEETCODE_PROBLEM_ARGTYPES
 #endif
 
-#include <iostream>
 #include <sstream>
 #include <tuple>
-#include <vector>
 
 #include "LeetCode.hpp"
 #include "Parsers.hpp"
 
+// Helper
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const std::vector<T>& iterable) {
 	bool first = true;

@@ -16,4 +16,11 @@ using namespace std;
 
 const extern std::string TestCases;
 
+// Helper
+#include <iostream>
+#include <vector>
+
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& iterable);
+
 #endif
